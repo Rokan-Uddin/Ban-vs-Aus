@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket World</title>
+    <title>Ban vs Aus</title>
     <!-- bootstrap css  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/logo-bat.jpg" type="image/x-icon">
     <!-- custom css  -->
     <link rel="stylesheet" href="css/style.css">
     <!-- font awesome kit  -->
     <script src="https://kit.fontawesome.com/df6ef810ce.js" crossorigin="anonymous"></script>
+    <!-- custom  script  -->
     <script src="js/script.js"></script>
 </head>
 
@@ -74,7 +76,8 @@
                                 <h3 class="ms-2 text-secondary">Australia</h3>
                             </div>
                             <div>
-                                <h3 class="text-secondary">(20 ov, target 132)108 </h3>
+                                <h3 class="text-secondary"> <span class="d-none d-lg-inline">(20 ov, target 132)</span>
+                                    108 </h3>
                             </div>
                         </div>
                         <p>Bangladesh won by 23 runs</p>
@@ -101,7 +104,7 @@
                                 <i class="fas fa-trophy text-primary ms-2"></i>
                             </div>
                             <div>
-                                <h5>(18.4/20 ov,target 122)123/5</h5>
+                                <h3> <span class="d-none d-lg-inline">(18.4/20 ov,target 122)</span> 123/5</h3>
                             </div>
                         </div>
                         <p>Bangladesh won by 5 wickets(with 8 balls remaining)</p>
@@ -124,13 +127,14 @@
                         <div class="d-flex justify-content-between">
                             <div class="d-flex align-items-center">
                                 <img src="images/aus-flag.png" alt="" width="40" height="30">
-                                <h3 class="ms-2 ">Australia</h3>
+                                <h3 class="ms-2 text-secondary">Australia</h3>
                             </div>
                             <div>
-                                <h3 class=""> </h3>
+                                <h3 class="text-secondary"><span class="d-none d-lg-inline">(20 ov,target
+                                        128)</span>117/4</h3>
                             </div>
                         </div>
-                        <p>live</p>
+                        <p>Ban won by 10 runs</p>
                     </div>
                 </div>
                 <div class="col-lg-6 ">
@@ -144,7 +148,7 @@
                                 <i class="fas fa-trophy text-primary ms-2"></i>
                             </div>
                             <div>
-                                <h3>131/7</h3>
+                                <h3>0/0</h3>
                             </div>
                         </div>
                         <div class="d-flex justify-content-between">
@@ -153,10 +157,10 @@
                                 <h3 class="ms-2 text-secondary">Australia</h3>
                             </div>
                             <div>
-                                <h3 class="text-secondary">(20 ov, target 132)108 </h3>
+                                <h3 class="text-secondary">0/0 </h3>
                             </div>
                         </div>
-                        <p>Bangladesh won by 5 wickets(with 8 balls remaining)</p>
+                        <p>loading</p>
                     </div>
                 </div>
                 <div class="col-lg-6 ">
@@ -191,27 +195,27 @@
         <section class="container my-5 shadow rounded-3">
             <h1 class="text-center">Squads</h1>
             <hr>
-            <h3 class=text-center>Australia in Bangladesh T20Is</h3>
+            <!-- <h3 class=text-center>Australia in Bangladesh T20Is</h3> -->
             <div class="d-flex justify-content-around">
-                <div>
-                    <button href="" onclick="showAus()">
-                        <img src="images/aus-flag.png" alt="Australia-flag" width="40" height="30">
-                        <span>Australia T20I squad</span>
-                    </button>
 
-                </div>
-                <div>
-                    <button onclick="showBd()">
-                        <img src="images/bd-flag.jpg" alt="Australia-flag" width="40" height="30">
-                        <apan>Bangladesh T20I squad</apan>
-                    </button>
+                <button href="" onclick="showAus()" class="aus-btn btn">
+                    <img src="images/aus-flag.png" alt="Australia-flag" width="40" height="30">
+                    <span>Australia T20I squad</span>
+                </button>
 
-                </div>
+
+
+                <button onclick="showBd()" class="bd-btn btn">
+                    <img src="images/bd-flag.jpg" alt="Australia-flag" width="40" height="30">
+                    <apan>Bangladesh T20I squad</apan>
+                </button>
+
+
             </div>
             <!-- Bangladesh players  -->
             <div class="row mt-5 bd-players">
                 <h2 class="text-center">Bangladesh T20I squad</h2>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/bd-player/mahmudullah.png"
                         alt="" width="80" height="80">
                     <div>
@@ -222,7 +226,7 @@
                             Bowling: Right arm offbreak</p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/bd-player/afif.png" alt=""
                         width="80" height="80">
                     <div>
@@ -233,7 +237,7 @@
                             Bowling: Right arm offbreak</p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/bd-player/mahedi.png"
                         alt="" width="80" height="80">
                     <div>
@@ -246,7 +250,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/bd-player/mithun.png"
                         alt="" width="80" height="80">
                     <div>
@@ -256,7 +260,7 @@
                             Batting: Right hand bat </p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/bd-player/naim.png" alt=""
                         width="80" height="80">
                     <div>
@@ -266,7 +270,7 @@
                             Batting: Left hand bat </p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/bd-player/saifuddin.png"
                         alt="" width="80" height="80">
                     <div>
@@ -277,7 +281,7 @@
                             Bowling: Right arm medium fast</p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/bd-player/musaddek.png"
                         alt="" width="80" height="80">
                     <div>
@@ -288,7 +292,7 @@
                             Bowling: Right arm offbreak</p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/bd-player/mustafiz.png"
                         alt="" width="80" height="80">
                     <div>
@@ -299,7 +303,7 @@
                             Bowling: Left arm fast medium</p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/bd-player/nasum.png" alt=""
                         width="80" height="80">
                     <div>
@@ -311,7 +315,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/bd-player/nurul.png" alt=""
                         width="80" height="80">
                     <div>
@@ -322,7 +326,7 @@
                             Bowling: Right arm medium fast</p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/bd-player/shoriful.png"
                         alt="" width="80" height="80">
                     <div>
@@ -333,7 +337,7 @@
                             Bowling: Left arm medium fast</p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/bd-player/shakib.png"
                         alt="" width="80" height="80">
                     <div>
@@ -344,7 +348,7 @@
                             Bowling: Slow left arm orthodox</p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/bd-player/soumoya.png"
                         alt="" width="80" height="80">
                     <div>
@@ -356,12 +360,11 @@
                     </div>
                 </div>
 
-
             </div>
             <!-- Australia Players  -->
             <div class="row mt-5 aus-players">
                 <h2 class="text-center">Australia T20I squad</h2>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/aus-player/wade.png" alt=""
                         width="80" height="80">
                     <div>
@@ -373,7 +376,7 @@
                             Bowling: Right arm medium</p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/aus-player/agar.png" alt=""
                         width="80" height="80">
                     <div>
@@ -385,7 +388,7 @@
                             Bowling: Slow left arm orthodox</p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/aus-player/hazalwood.png"
                         alt="" width="80" height="80">
                     <div>
@@ -398,7 +401,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/aus-player/marsh.png"
                         alt="" width="80" height="80">
                     <div>
@@ -409,7 +412,7 @@
                             Batting: Right hand bat <br> Bowling: Right arm medium </p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/aus-player/starc.png"
                         alt="" width="80" height="80">
                     <div>
@@ -420,7 +423,7 @@
                             Batting: Left hand bat <br>Bowling: Left arm fast </p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/aus-player/Zampa.png"
                         alt="" width="80" height="80">
                     <div>
@@ -431,7 +434,7 @@
                             Bowling: Legbreak googly</p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/aus-player/Turner.png"
                         alt="" width="80" height="80">
                     <div>
@@ -443,7 +446,7 @@
                             Bowling: Right arm offbreak</p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/aus-player/Tye.png" alt=""
                         width="80" height="80">
                     <div>
@@ -455,7 +458,7 @@
                             Bowling: Right arm medium fast</p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/aus-player/carry.png"
                         alt="" width="80" height="80">
                     <div>
@@ -466,7 +469,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/aus-player/henriques.png"
                         alt="" width="80" height="80">
                     <div>
@@ -478,7 +481,7 @@
                             Bowling: Right arm fast medium</p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/aus-player/Ben.png" alt=""
                         width="80" height="80">
                     <div>
@@ -493,7 +496,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex border p-4">
+                <div class="col-md-6 col-lg-4 d-flex border p-4">
                     <img class="border border-dark border-5 rounded-circle me-4" src="images/aus-player/philiphe.png"
                         alt="" width="80" height="80">
                     <div>
@@ -506,9 +509,79 @@
             </div>
 
         </section>
-    </main>
-    <footer>
+        <!-- Photo Gallary -->
+        <section class="container my-5">
+            <h1 class="text-center my-5">Photo Gallery</h1>
+            <h3 class="text-center">Australia tour of Bangladesh 2021</h3>
+            <div class="row ">
+                <div class="col-md-4">
+                    <div>
+                        <img class="w-100 rounded-3" src="images/gallary/1.jpg" alt="">
+                        <p>Shoriful Islam celebrates Moises Henriques' wicket with his team-mates • Aug 06, 2021 ©
+                            AFP/Getty Images </p>
+                    </div>
+                    <div>
+                        <img class="w-100 rounded-3" src="images/gallary/2.jpg" alt="">
+                        <p>The Bangladesh players celebrate the early wicket of Matthew Wade • Aug 06, 2021 © AFP/Getty
+                            Images
 
+                        </p>
+                    </div>
+                    <div>
+                        <img class="w-100 rounded-3" src="images/gallary/3.jpg" alt="">
+                        <p>Nathan Ellis celebrates a wicket • Aug 06, 2021 © AFP/Getty Images
+                        </p>
+                    </div>
+                    <div>
+                        <img class="w-100 rounded-3" src="images/gallary/8.jpg" alt="">
+                        <p>Bangladesh players attend a practice session at the Shere Bangla National Cricket Stadium •
+                            Aug 01, 2021 © Munir Uz Zaman/AFP
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <img class="w-100 rounded-3" src="images/gallary/10.jpg" alt="">
+                        <p>Mitchell Marsh pulls • Aug 06, 2021 © AFP/Getty Images</p>
+                    </div>
+                    <div>
+                        <img class="w-100 rounded-3" src="images/gallary/11.jpg" alt="">
+                        <p>Nurul Hasan has to stretch to play a sweep • Aug 06, 2021 © AFP/Getty Images</p>
+                    </div>
+                    <div>
+                        <img class="w-100 rounded-3" src="images/gallary/18.jpg" alt="">
+                        <p>Afif Hossain is pumped after taking Bangladesh to victory • Aug 04, 2021 © AFP/Getty Images
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <img class="w-100 rounded-3" src="images/gallary/17.jpg" alt="">
+                        <p>Josh Hazlewood celebrates a wicket with his team-mates • Aug 06, 2021 © AFP/Getty Images </p>
+                    </div>
+                    <div>
+                        <img class="w-100 rounded-3" src="images/gallary/12.jpg" alt="">
+                        <p>Shakib Al Hasan and Mahmudullah put together a good stand • Aug 06, 2021 © AFP/Getty Images
+                        </p>
+                    </div>
+                    <div>
+                        <img class="w-100 rounded-3" src="images/gallary/19.jpg" alt="">
+                        <p>Covers are taken off after rain delayed the start at the Sher-e-Bangla National Stadium • Aug
+                            06, 2021 © AFP/Getty Images
+                        </p>
+                    </div>
+                    <div>
+                        <img class="w-100 rounded-3" src="images/gallary/20.jpg" alt="">
+                        <p>The Australians warm up with a game of Aussie Rules Football • Aug 02, 2021 © BCB
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark">
+        <p class="text-center text-white">© 2021,All rights reserved</p>
     </footer>
     <!-- bootstrap script  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"

@@ -4,3 +4,13 @@
 .bd-players{
     display: none;
 }
+.aus-btn{
+    width: 100%;
+    padding-left: auto;
+    background-color: rgba(128, 128, 128, 0.15);
+    font-weight: bold;
+}
+.bd-btn{
+    width: 100%;
+    padding-left: auto;
+}
