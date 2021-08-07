@@ -1,7 +1,21 @@
+/* -----------
+Header section style
+----------- */
+header{
+    background-color: #4a4c4f;
+}
+.navbar-icon{
+    color: white ;
+}
+/*---------------
+ Squads section style 
+---------------- */
+
 .aus-players{
     display: flex;
 }
 .bd-players{
+    /* By default bd players hidden */
     display: none;
 }
 .aus-btn{
@@ -14,3 +28,12 @@
     width: 100%;
     padding-left: auto;
 }
+
+/* --------------------
+Photo gallary syle  
+----------------------*/
+.photo-card:hover>img{
+    transition: transform 1s linear 0s;
+    transform: scale(1.2);
+}
+/* navbar-icon in small device */
