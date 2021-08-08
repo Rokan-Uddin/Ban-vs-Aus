@@ -5,8 +5,13 @@ header{
     background-color: #4a4c4f;
 }
 .navbar-icon{
+    /* navbar-icon for small device */
     color: white ;
 }
+.nav-item:hover{
+    background-color: black;
+}
+
 /*---------------
  Squads section style 
 ---------------- */
@@ -30,10 +35,10 @@ header{
 }
 
 /* --------------------
-Photo gallary syle  
+Photo gallary style  
 ----------------------*/
 .photo-card:hover>img{
     transition: transform 1s linear 0s;
     transform: scale(1.2);
 }
-/* navbar-icon in small device */
+
