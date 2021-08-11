@@ -22,8 +22,8 @@
 <body>
     <header>
         <!-- navbar  -->
-        <section>
-            <nav class="navbar navbar-expand-lg ">
+        <section class="mb-5">
+            <nav class="navbar navbar-expand-lg fixed-top">
                 <!-- fixed-top  navbar-dark bg-dark -->
                 <div class="container">
                     <a class="navbar-brand" href="#">
@@ -37,13 +37,13 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link text-white mx-3" href="#schedule">Schedule & Results</a>
+                                <a class="nav-link text-white mx-3" href="#schedule" onclick="setMarginTOp()">Schedule & Results</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white mx-3" href="#squads">Squads</a>
+                                <a class="nav-link text-white mx-3" href="#squads" onclick="setMarginTOp()">Squads</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white mx-3" href="#photos">Photo</a>
+                                <a class="nav-link text-white mx-3" href="#photos" onclick="setMarginTOp()">Photo</a>
                             </li>
                         </ul>
 
@@ -71,13 +71,13 @@
     <main>
         <!-- Schedule  and Results section  -->
         <section id="schedule" class="container my-5">
-            <h1 class="text-center my-3">Fixtures and Results</h1>
+            <h1 class="text-center my-5">Fixtures and Results</h1>
             <h3 class="text-center text-secondary">Bangladesh vs Australia</h3>
             <div class="row g-3 shadow">
                 <div class="col-lg-6 ">
                     <div class="border rounded-3 p-4">
-                        <h3>Results</h3>
-                        <p> 1st T20I (N), Dhaka, Aug 3 2021, Australia tour of Bangladesh </p>
+                        <h3>03 AUG,6:00 PM</h3>
+                        <p> 1st T20I (N), Dhaka, Australia tour of Bangladesh </p>
                         <div class="d-flex justify-content-between">
                             <div class="d-flex align-items-center">
                                 <img src="images/bd-flag.jpg" alt="" width="40" height="30">
@@ -103,8 +103,8 @@
                 </div>
                 <div class="col-lg-6 ">
                     <div class="border rounded-3 p-4">
-                        <h3>Results</h3>
-                        <p> 2nd T20I (N), Dhaka, Aug 4 2021, Australia tour of Bangladesh </p>
+                        <h3>04 AUG,6:00 PM</h3>
+                        <p> 2nd T20I (N), Dhaka, Australia tour of Bangladesh </p>
 
                         <div class="d-flex justify-content-between">
                             <div class="d-flex align-items-center">
@@ -130,8 +130,8 @@
                 </div>
                 <div class="col-lg-6 ">
                     <div class="border rounded-3 p-4">
-                        <h3>Results</h3>
-                        <p> 3rd T20I (N), Dhaka, Aug 6 2021, Australia tour of Bangladesh </p>
+                        <h3>06 AUG,6:00 PM</h3>
+                        <p> 3rd T20I (N), Dhaka, Australia tour of Bangladesh </p>
                         <div class="d-flex justify-content-between">
                             <div class="d-flex align-items-center">
                                 <img src="images/bd-flag.jpg" alt="" width="40" height="30">
@@ -157,8 +157,8 @@
                 </div>
                 <div class="col-lg-6 ">
                     <div class="border rounded-3 p-4">
-                        <h3>Results</h3>
-                        <p> 4th T20I (N), Dhaka, Aug 7 2021, Australia tour of Bangladesh </p>
+                        <h3>07 AUG,6:00 PM</h3>
+                        <p> 4th T20I (N), Dhaka, Australia tour of Bangladesh </p>
                         <div class="d-flex justify-content-between">
                             <div class="d-flex align-items-center">
                                 <img src="images/bd-flag.jpg" alt="" width="40" height="30">
@@ -185,41 +185,42 @@
                 <div class="col-lg-6 ">
                     <div class="border rounded-3 p-4">
                         <h3>09 AUG,6:00 PM</h3>
-                        <p> 5th T20I (N), Dhaka, Aug 3 2021, Australia tour of Bangladesh </p>
+                        <p> 5th T20I (N), Dhaka, Australia tour of Bangladesh </p>
                         <div class="d-flex justify-content-between">
                             <div class="d-flex align-items-center">
                                 <img src="images/bd-flag.jpg" alt="" width="40" height="30">
                                 <h3 class="ms-2">Bangladesh</h3>
+                                <i class="fas fa-trophy text-primary ms-2"></i>
                             </div>
                             <div>
-                                <h3></h3>
+                                <h3>122/8</h3>
                             </div>
                         </div>
                         <div class="d-flex justify-content-between">
                             <div class="d-flex align-items-center">
                                 <img src="images/aus-flag.png" alt="" width="40" height="30">
-                                <h3 class="ms-2">Australia</h3>
+                                <h3 class="ms-2 text-secondary">Australia</h3>
                             </div>
                             <div>
-                                <h3></h3>
+                                <h3 class="text-secondary"><span class="d-none d-md-inline">(13.4 ov,target 123)</span>62/10</h3>
                             </div>
                         </div>
-                        <p>Match yet to begin</p>
+                        <p>Ban won by 60 runs</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Squads section  -->
         <section id="squads" class="container my-5 shadow rounded-3">
-            <h1 class="text-center">Squads</h1>
+            <h1 class="text-center my-5">Squads</h1>
             <hr>
             <div class="d-flex justify-content-around">
                 <!-- changed team players using javascript function -->
-                <button onclick="showAus()" class="aus-btn btn">
+                <button onclick="showAus()" class="aus-btn  border-0">
                     <img src="images/aus-flag.png" alt="Australia-flag" width="40" height="30">
                     <span>Australia T20I squad</span>
                 </button>
-                <button onclick="showBd()" class="bd-btn btn">
+                <button onclick="showBd()" class="bd-btn  border-0">
                     <img src="images/bd-flag.jpg" alt="Australia-flag" width="40" height="30">
                     <apan>Bangladesh T20I squad</apan>
                 </button>
